@@ -1,0 +1,46 @@
+// Extractive JVM/Maven apex: jars staged under share/ dirs
+package {
+    default_applicable_licenses: ["Android-Apache-2.0"],
+}
+
+java_import {
+    name: "error_prone_annotations",
+    jars: ["share/error-prone-annotations/error-prone-annotations__error_prone_annotations-2.26.1.jar"],
+    host_supported: true,
+}
+
+java_import {
+    name: "error_prone_checkerframework_dataflow_errorprone",
+    jars: ["share/error-prone-checkerframework-dataflow-errorprone/error-prone-checkerframework-dataflow-errorprone__dataflow-errorprone-3.42.0.jar"],
+    host_supported: true,
+}
+
+java_import {
+    name: "error_prone_checkerframework_dataflow_nullaway",
+    jars: ["share/error-prone-checkerframework-dataflow-nullaway/error-prone-checkerframework-dataflow-nullaway__dataflow-errorprone-3.42.0.jar"],
+    host_supported: true,
+}
+
+java_import {
+    name: "error_prone_core",
+    jars: ["share/error-prone-core/error-prone-core__error_prone_core-2.26.1.jar"],
+    host_supported: true,
+}
+
+java_import {
+    name: "error_prone_core_jars",
+    jars: ["share/error-prone-core-jars/error-prone-core-jars__error_prone_core-2.26.1.jar"],
+    host_supported: true,
+}
+
+java_import {
+    name: "error_prone_javac",
+    jars: ["share/error-prone-javac/error-prone-javac__javac-9+181-r4173-1.jar"],
+    host_supported: true,
+}
+
+java_import {
+    name: "error_prone_jformatstring",
+    jars: ["share/error-prone-jformatstring/error-prone-jformatstring__error_prone_check_api-2.26.1.jar"],
+    host_supported: true,
+}

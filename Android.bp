@@ -67,3 +67,61 @@ java_import {
     host_supported: true,
     prefer: true,
 }
+
+java_library {
+    name: "error_prone_annotations",
+    host_supported: true,
+    static_libs: ["error-prone-annotations"],
+    apex_available: [
+        "//apex_available:anyapex",
+        "//apex_available:platform",
+    ],
+}
+
+java_library {
+    name: "error_prone_core",
+    host_supported: true,
+    static_libs: [
+        "error-prone-core",
+        "error-prone-core-jars",
+        "error-prone-checkerframework-dataflow-errorprone",
+        "error-prone-javac",
+        "error-prone-jformatstring",
+    ],
+}
+
+java_library {
+    name: "error_prone_core_jars",
+    host_supported: true,
+    static_libs: ["error-prone-core-jars"],
+}
+
+java_library {
+    name: "error_prone_checkerframework_dataflow_errorprone",
+    host_supported: true,
+    static_libs: ["error-prone-checkerframework-dataflow-errorprone"],
+}
+
+java_library {
+    name: "error_prone_checkerframework_dataflow_nullaway",
+    host_supported: true,
+    static_libs: ["error-prone-checkerframework-dataflow-nullaway"],
+}
+
+java_library {
+    name: "error_prone_javac",
+    host_supported: true,
+    static_libs: ["error-prone-javac"],
+}
+
+java_library {
+    name: "error_prone_jFormatString",
+    host_supported: true,
+    static_libs: ["error-prone-jformatstring"],
+}
+
+java_library {
+    name: "error_prone_test_helpers",
+    host_supported: true,
+    static_libs: ["error-prone-core"],
+}
